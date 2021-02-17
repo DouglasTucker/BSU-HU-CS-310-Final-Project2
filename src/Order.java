@@ -16,7 +16,17 @@ public class Order {
 		this.order_timestamp = order_timestamp;
 		
 	}
-
+	
+	public String getItem_code() {
+		return item_code;
+	}
+	
+	public int getQuantity() {
+		return quantity;
+	}
+	
+	
+	
 	 public String toString(){
 	        return String.format("(%s, %s, %s, %s)", this.order_id, this.item_code, this.quantity, this.order_timestamp);
 	    }
