@@ -1,0 +1,47 @@
+****************
+* CS-HU310
+* Final Project
+* 2-20-2021
+* Douglas Tucker
+**************** 
+
+OVERVIEW:
+
+ Project connects to my database and inserts, update, deletes, and selects data 
+ from the database that corresponds to items and orders. Using the commands you
+ can create a table of available items including information about them such as
+ price, description and even amount available. Once you have items created you
+ can create orders for those items. This program is design to not allow an order
+ for an item that is not defined on the items table.
+ 
+
+
+INCLUDED FILES:
+
+ * Project.java - Driver class
+ * MYSQLDatabase.java - Sets up database connection
+ * Item.java - Object to hold reference to row of items table
+ * Order.java - Object to hold reference to a row of orders table
+ * SQL Procedure files
+ *	-create_items_table.sql
+ *  -create_ordres_table.sql
+ * README - this file
+
+
+COMPILING AND RUNNING:
+ From the directory containing all source files, compile the
+driver class (and all dependencies) with the command:
+ $ javac Project.java
+
+ Run the compiled class file with the command options:
+ $ java Project CreateItem <itemCode> <itemDescription> <price> <inventory_amount>
+ $ java Project UpdateInventory <item_code> < inventory_amount>
+ $ java Project DeleteItem <item_code>
+ $ java Project GetItems <item_code or % for all>
+ $ java Project CreateOrder <item_code> <quantity>
+ $ java Project DeleteOrder <item_code>
+ $ java Project GetOrders <item_code or % for all>
+ $ java Project GetOrderDetails <order_id or % for all>
+
+
+ Console output will give the results of commands.
