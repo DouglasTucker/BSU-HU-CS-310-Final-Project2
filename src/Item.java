@@ -6,7 +6,8 @@ public class Item {
 	private double price;
 	private int inventory_amount;
 	
-	public Item(String item_code, String description, double price, int inventory_amount ) {
+	public Item(int item_id,String item_code, String description, double price, int inventory_amount ) {
+		this.item_id = item_id;
 		this.item_code = item_code;
 		this.description = description;
 		this.price = price;
@@ -25,7 +26,7 @@ public class Item {
         return price;
     }
 	
-	public int getinventory_amount() {
+	public int getInventory_amount() {
 		return inventory_amount;
 	}
     
